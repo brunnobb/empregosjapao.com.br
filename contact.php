@@ -101,7 +101,7 @@ require_once('PHPMailer-master/PHPMailerAutoload.php');
 
 $mail = new PHPMailer();
 
-$PwdcaixaPostalServidorSenha = 'kamilly10';
+$PwdcaixaPostalServidorSenha = 'diegominato';
 
 
 
@@ -114,6 +114,8 @@ $mail->Username  = $address;
 $mail->Password  = $PwdcaixaPostalServidorSenha;
 $mail->From  = $address;
 $mail->FromName  = utf8_decode($address);
+$mail->AddCC('diegodias.minato@gmail.com')
+$mail->AddCC('orientetour95@gmail.com')
 $mail->IsHTML(true);
 $mail->Subject  = utf8_decode($e_subject);
 $mail->Body  = utf8_decode($msg);
